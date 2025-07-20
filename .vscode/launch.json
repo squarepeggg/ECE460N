@@ -1,0 +1,59 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "Lab5",
+          "type": "cppdbg",
+          "request": "launch",
+          "program": "/home/ecelrc/students/mto472/EE460N/lab5/build/lc3bsim5",
+          "args": [
+              "/home/ecelrc/students/mto472/EE460N/lab5/ucode5",
+              "/home/ecelrc/students/mto472/EE460N/lab5/build/pagetable",
+              "/home/ecelrc/students/mto472/EE460N/lab5/build/add",
+              "/home/ecelrc/students/mto472/EE460N/lab5/build/int",
+              "/home/ecelrc/students/mto472/EE460N/lab5/build/vector_table",
+              "/home/ecelrc/students/mto472/EE460N/lab5/build/except_page",
+              "/home/ecelrc/students/mto472/EE460N/lab5/build/except_prot",
+              "/home/ecelrc/students/mto472/EE460N/lab5/build/except_unaligned",
+              "/home/ecelrc/students/mto472/EE460N/lab5/build/except_unknown",
+              "/home/ecelrc/students/mto472/EE460N/lab5/build/data"
+          ],
+          "stopAtEntry": false,
+          "cwd": "/home/ecelrc/students/mto472/EE460N/lab5",
+          "environment": [],
+          "externalConsole": false,
+          "MIMode": "gdb",
+          "miDebuggerPath": "gdb",
+          "setupCommands": [
+              {
+                  "description": "Enable pretty-printing for GDB",
+                  "text": "-enable-pretty-printing",
+                  "ignoreFailures": true
+              }
+          ],
+          "preLaunchTask": "Build and Assemble Lab5",
+          "internalConsoleOptions": "openOnSessionStart"
+      },
+      {
+          "name": "C/C++ Runner: Lab 5 Debug Session",
+          "type": "cppdbg",
+          "request": "launch",
+          "program": "/home/ecelrc/students/mto472/EE460N/lab5/build/lc3bsim5",
+          "args": [],
+          "stopAtEntry": false,
+          "cwd": "/home/ecelrc/students/mto472/EE460N/lab5",
+          "environment": [],
+          "externalConsole": false,
+          "MIMode": "gdb",
+          "miDebuggerPath": "gdb",
+          "setupCommands": [
+              {
+                  "description": "Enable pretty-printing for gdb",
+                  "text": "-enable-pretty-printing",
+                  "ignoreFailures": true
+              }
+          ],
+          "internalConsoleOptions": "openOnSessionStart"
+      }
+  ]
+}

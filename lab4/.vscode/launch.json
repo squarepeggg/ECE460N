@@ -1,0 +1,54 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Lab 4",
+        "type": "cppdbg",
+        "request": "launch",
+        "args": [
+          "${workspaceFolder}/ucode4",
+          "${workspaceFolder}/build/add",
+          "${workspaceFolder}/build/int",
+          "${workspaceFolder}/build/vector_table",
+          "${workspaceFolder}/build/except_prot",
+          "${workspaceFolder}/build/except_unaligned",
+          "${workspaceFolder}/build/except_unknown",
+          "${workspaceFolder}/build/data"
+        ],
+        "stopAtEntry": false,
+        "externalConsole": false,
+        "cwd": "${workspaceFolder}",
+        "program": "${workspaceFolder}/build/a.out",
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "Build and Assemble Lab4",
+        "internalConsoleOptions": "openOnSessionStart"
+      },
+      {
+        "name": "C/C++ Runner: Debug Session",
+        "type": "cppdbg",
+        "request": "launch",
+        "args": [],
+        "stopAtEntry": false,
+        "externalConsole": false,
+        "cwd": "/home/natha/460N/ECE460NLab4",
+        "program": "/home/natha/460N/ECE460NLab4/build/Debug/outDebug",
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,186 @@
+{
+    "tasks": [
+        {
+            "label": "Run Assembler",
+            "type": "shell",
+            "command": "/home/ecelrc/students/mto472/EE460N/lab5",
+            "args": [
+                "/home/ecelrc/students/mto472/EE460N/lab5/add.asm",
+                "/home/ecelrc/students/mto472/EE460N/lab5/build/add"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "add",
+            "type": "shell",
+            "command": "./assembler.linux",
+            "args": [
+                "add.asm",
+                "build/add"
+            ],
+            "group": "build",
+            "options": {
+                "cwd": "/home/ecelrc/students/mto472/EE460N/lab5"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "int",
+            "type": "shell",
+            "command": "./assembler.linux",
+            "args": [
+                "int.asm",
+                "build/int"
+            ],
+            "group": "build",
+            "options": {
+                "cwd": "/home/ecelrc/students/mto472/EE460N/lab5"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "vector_table",
+            "type": "shell",
+            "command": "./assembler.linux",
+            "args": [
+                "vector_table.asm",
+                "build/vector_table"
+            ],
+            "group": "build",
+            "options": {
+                "cwd": "/home/ecelrc/students/mto472/EE460N/lab5"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "pagetable",
+            "type": "shell",
+            "command": "./assembler.linux",
+            "args": [
+                "pagetable.asm",
+                "build/pagetable"
+            ],
+            "group": "build",
+            "options": {
+                "cwd": "/home/ecelrc/students/mto472/EE460N/lab5"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "except_page",
+            "type": "shell",
+            "command": "./assembler.linux",
+            "args": [
+                "except_page.asm",
+                "build/except_page"
+            ],
+            "group": "build",
+            "options": {
+                "cwd": "/home/ecelrc/students/mto472/EE460N/lab5"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "except_prot",
+            "type": "shell",
+            "command": "./assembler.linux",
+            "args": [
+                "except_prot.asm",
+                "build/except_prot"
+            ],
+            "group": "build",
+            "options": {
+                "cwd": "/home/ecelrc/students/mto472/EE460N/lab5"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "except_unaligned",
+            "type": "shell",
+            "command": "./assembler.linux",
+            "args": [
+                "except_unaligned.asm",
+                "build/except_unaligned"
+            ],
+            "group": "build",
+            "options": {
+                "cwd": "/home/ecelrc/students/mto472/EE460N/lab5"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "except_unknown",
+            "type": "shell",
+            "command": "./assembler.linux",
+            "args": [
+                "except_unknown.asm",
+                "build/except_unknown"
+            ],
+            "group": "build",
+            "options": {
+                "cwd": "/home/ecelrc/students/mto472/EE460N/lab5"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "data",
+            "type": "shell",
+            "command": "./assembler.linux",
+            "args": [
+                 "data.asm",
+                "build/data"
+            ],
+            "group": "build",
+            "options": {
+                "cwd": "/home/ecelrc/students/mto472/EE460N/lab5"
+            },
+            "problemMatcher": []
+        },
+        {
+            "type": "cppbuild",
+            "label": "Lab5",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "lc3bsim5.c",
+                "-o",
+                "build/lc3bsim5",
+                ""
+            ],
+            "options": {
+                "cwd": "/home/ecelrc/students/mto472/EE460N/lab5"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Build the LC-3b simulator for Lab 5."
+        },
+        {
+            "label": "Build and Assemble Lab5",
+            "dependsOn": [
+                "add",
+                "int",
+                "vector_table",
+                "pagetable",
+                "except_page",
+                "except_prot",
+                "except_unaligned",
+                "except_unknown",
+                "data",
+                "Lab5"
+            ],
+            "type": "shell",
+            "command": "echo",
+            "args": [
+                "All tasks are done!"
+            ],
+            "problemMatcher": []
+        }
+    ],
+    "version": "2.0.0"
+}
